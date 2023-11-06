@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>product</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: lightblue; /* Set the background color */
+        }
+
+        .form-container {
+            background-color: #fff; /* Set a white background for the form */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%; /* Adjust the width to fit your needs */
+            max-width: 400px; /* Set the maximum width */
+            margin-top: 50px; /* Add some top margin to center the form */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="form-container col-md-6">
+                <form action="/product" method="post">
+                    <div class="form-group">
+                        <label for="name">Product name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="describe">Description</label>
+                        <input type="text" class="form-control" name="describe" id="describe">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" class="form-control" name="price" id="price">
+                    </div>
+                    <button type="submit" class="btn btn-primary">ADD PRODUCT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS and jQuery if needed -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+</html>
